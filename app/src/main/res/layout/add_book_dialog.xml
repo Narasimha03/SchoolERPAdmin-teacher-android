@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Book Title"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPublisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editPublisher"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Publisher"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editAuthor"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Author"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editSubject"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Subject"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutRackNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editRackNo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Rack No"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutQTY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editQTY"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="QTY"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutBookPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editBookPrice"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Book Price"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutInwardDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editInwardDate"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@android:color/transparent"
+                android:hint="Inward Date"
+                android:inputType="datetime"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editInwardDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Description"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

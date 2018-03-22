@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Fees Type List"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:visibility="visible">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:elevation="6dp"
+                android:minHeight="?attr/actionBarSize"
+                android:visibility="visible"
+                app:tabGravity="fill"
+                app:tabSelectedTextColor="#FFF"
+                app:tabTextColor="#B3FFFFFF" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/tabViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tabLayout"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

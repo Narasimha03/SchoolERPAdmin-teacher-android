@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/classes_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/admin_classes_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admin_curriculum_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/classes_layout"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            android:background="#f5f5f5"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9:00 - 10:00" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:00 - 11:00" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:00 - 12:00" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:00 - 1:00" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="1:00 - 2:00" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2:00 - 3:00" />
+
+            <TextView
+                style="@style/AdminTTtext"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="3:00 - 4:00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="#f2f2f2"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:id="@+id/admin_section_recycler"
+                android:layout_height="match_parent"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="img_id" type="id" />
+    <item name="imgId_file" type="id" />
+    <item name="file_name" type="id" />
+    <item name="file_owner" type="id" />
+    <item name="file_time" type="id" />
+    <item name="comment_id" type="id" />
+    <item name="title_id" type="id" />
+    <item name="layout_id" type="id" />
+</resources>

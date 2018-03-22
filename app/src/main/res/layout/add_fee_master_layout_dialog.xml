@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/fee_category_layout"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/titleSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Fee Category"
+                android:layout_marginBottom="3dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/fee_category"
+                android:layout_width="match_parent"
+android:layout_marginBottom="5dp"
+                android:backgroundTint="@android:color/black"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titleSpinner" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_margin="3dp"
+            android:layout_below="@id/fee_category_layout"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fee Type"
+                android:padding="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"/>
+
+            <EditText
+                android:id="@+id/fee_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Add Fee Type"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:padding="5dp"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+            <!--<android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fee_category"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingStart="5dp"
+                android:paddingTop="10dp"
+                android:textColorHint="@color/colorPrimaryDark"
+                app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+                <EditText
+                    android:id="@+id/fee_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Fee Type"
+                    android:inputType="text"
+                    android:paddingTop="10dp" />
+
+            </android.support.design.widget.TextInputLayout>-->
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

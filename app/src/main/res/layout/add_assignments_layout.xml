@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/darker_gray"
+    android:clipToPadding="true"
+    android:paddingBottom="40dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:contentPadding="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/mainLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:id="@+id/classLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleClass"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="16dp"
+                                    android:text="Class"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="15sp" />
+
+                                <Spinner
+                                    android:id="@+id/classSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginStart="16dp"
+                                    android:backgroundTint="@android:color/black" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/sectionLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleSection"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="16dp"
+                                    android:text="Section"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="15sp" />
+
+                                <Spinner
+                                    android:id="@+id/sectionSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginEnd="16dp"
+                                    android:layout_marginStart="16dp"
+                                    android:backgroundTint="@android:color/black" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/titleSubject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mainLayout"
+                            android:padding="16dp"
+                            android:text="Subject"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/subjectSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/titleSubject"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp"
+                            android:backgroundTint="@android:color/black" />
+
+                        <!-- <Button
+                             android:id="@+id/select"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_alignParentEnd="true"
+                             android:layout_below="@+id/subjectSpinner"
+                             android:layout_marginBottom="5dp"
+                             android:layout_marginEnd="5dp"
+                             android:background="@drawable/button_shape"
+                             android:paddingEnd="10dp"
+                             android:paddingStart="10dp"
+                             android:text="Select"
+                             android:textAllCaps="false"
+                             android:textColor="@color/white" />-->
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cardView"
+                    android:layout_margin="5dp"
+                    card_view:cardCornerRadius="5dp"
+                    card_view:contentPadding="6dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <!--   <TextView
+                               android:id="@+id/addAssignText"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:paddingEnd="0dp"
+                               android:paddingStart="16dp"
+                               android:paddingTop="15dp"
+                               android:text="Add Assignment"
+                               android:textColor="@color/colorAccent" />-->
+
+                        <LinearLayout
+                            android:id="@+id/assignLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="16dp"
+                                    android:text="Assignment Name"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/editAssignName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingLeft="16dp"
+                                    android:paddingBottom="10dp"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:background="@drawable/edittext"
+                                    android:hint="Assignment Name"
+                                    android:inputType="text"
+                                    android:textSize="15sp"
+                                    android:paddingStart="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/chapterLayout"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/titleChapter"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="16dp"
+                                    android:text="Chapter"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="15sp" />
+
+                                <Spinner
+                                    android:id="@+id/chapterSpinner"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:backgroundTint="@android:color/black" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/topicLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/assignLayout"
+                            android:layout_marginTop="5dp"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="16dp"
+                                    android:text="Due Date"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/editDueDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="16dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginStart="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:paddingLeft="16dp"
+                                    android:paddingBottom="10dp"
+                                    android:background="@drawable/edittext"
+                                    android:focusableInTouchMode="false"
+                                    android:hint="Due Date"
+                                    android:inputType="datetime"
+                                    android:textSize="15sp"
+                                    android:paddingStart="16dp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:padding="16dp"
+                                    android:text="Description"
+                                    android:textColor="@color/colorPrimaryDark"
+                                    android:textSize="15sp" />
+
+                                <EditText
+                                    android:id="@+id/editDescription"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginRight="3dp"
+                                    android:background="@drawable/edittext"
+                                    android:hint="Description"
+                                    android:paddingLeft="16dp"
+                                    android:paddingBottom="10dp"
+                                    android:inputType="text"
+                                    android:textSize="15sp"
+                                    android:paddingStart="16dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/topicLayout"
+                            android:layout_margin="20dp"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/addAssignment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/button_shape"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp"
+                                android:text="Add Assignment"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+</FrameLayout>

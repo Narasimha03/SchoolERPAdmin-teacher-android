@@ -1,0 +1,26 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="TabTheme" parent="AppTheme.NoActionBar">
+
+    </style>
+
+    <style name="CheckBoxAppTheme">
+        <item name="android:colorAccent">@color/theFillColorInCheckedState
+        </item>
+        <item name="android:colorControlNormal">@color/theBorderColorInUncheckedState
+        </item>
+        <item name="android:colorControlHighlight">@color/theBackgroundColorWhenFocusingTheCheckBox
+        </item>
+    </style>
+
+</resources>

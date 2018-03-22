@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:id="@+id/fee_category_layout"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/titleSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="Fee Category"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/fee_category"
+        android:layout_below="@+id/titleSpinner"
+        android:layout_width="match_parent"
+        android:backgroundTint="@android:color/black"
+        android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:layout_below="@+id/fee_category_layout"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/fee_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/transparent"
+            android:hint="Fee Type"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:paddingTop="20dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

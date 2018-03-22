@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Route Title"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Vehicle Code"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Vehicle No"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutFare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editFare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Fare"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

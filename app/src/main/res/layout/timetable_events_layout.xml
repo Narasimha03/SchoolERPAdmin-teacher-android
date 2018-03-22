@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:agendaCalendar="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="#008996"/>
+
+    <com.github.tibolte.agendacalendarview.AgendaCalendarView
+        android:id="@+id/agenda_calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        agendaCalendar:agendaCurrentDayTextColor="@color/blue_selected"
+        agendaCalendar:calendarColor="#009ba9"
+        agendaCalendar:calendarCurrentDayTextColor="@color/theme_light_primary"
+        agendaCalendar:calendarDayTextColor="@android:color/white"
+        agendaCalendar:calendarHeaderColor="#008996"
+        agendaCalendar:calendarPastDayTextColor="#d4d4d4"
+        agendaCalendar:fabColor="@color/colorAccent" />
+
+</LinearLayout>

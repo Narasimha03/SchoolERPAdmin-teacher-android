@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:elevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/profile_circle"
+            android:elevation="4dp"
+            android:gravity="center">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgUser"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:elevation="4dp"
+                android:src="@drawable/jani"
+                android:visibility="gone"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="0dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="0" />
+
+            <ImageView
+                android:id="@+id/imgText"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        card_view:cardCornerRadius="8dp"
+        card_view:contentPadding="6dp">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_gradient" />
+
+
+        <LinearLayout
+            android:id="@+id/studentDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgLayout"
+            android:layout_toRightOf="@+id/imgLayout"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/stdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/baahubali"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="23sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ldnTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Admission No."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ldn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Local identification Number"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/classData"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/classStdTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Class:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/classStd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Class 6(Section C)"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/currentAddTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Roll Number:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/currentAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Current Address"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/genderTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Gender:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="Male"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dobTile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="D.O.B:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:layout_weight="1"
+                    android:text="12-07-92"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guardianNameTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Category:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/guardianName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Category"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guardianNumTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Contact:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/guardianNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:text="Contact"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

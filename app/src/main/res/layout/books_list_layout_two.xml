@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@android:color/darker_gray"
+    android:gravity="bottom">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/noText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="No Books Found"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/fabBGLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransBg"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransBg"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="7dp"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/standard_12"
+            android:visibility="gone"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_fab_text"
+                android:elevation="4dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Admission"
+                android:textColor="#313131"
+
+                android:textSize="16dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_done"
+                android:tint="@android:color/white"
+                app:backgroundTint="@color/colorFAB2"
+                app:fabSize="mini" />
+            <!--     &lt;!&ndash;
+                         app:srcCompat="@drawable/ic_message"
+                 &ndash;&gt;-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fabLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="7dp"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/standard_12"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_fab_text"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Add Books"
+                android:textColor="#313131"
+                android:textSize="16sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/add_book"
+                app:backgroundTint="@color/colorFAB1"
+                app:fabSize="mini" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/standard_12">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</RelativeLayout>
+

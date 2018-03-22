@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.medianet.proschool.DashboardActivity"
+    tools:showIn="@layout/activity_dashboard">
+
+    <LinearLayout
+        android:id="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <RelativeLayout
+            android:id="@+id/navigationHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/side_nav_bar"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:paddingTop="16dp"
+                app:srcCompat="@drawable/logo" />
+
+            <RelativeLayout
+                android:id="@+id/imgLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="16dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/jani"
+                    android:visibility="visible"
+                    app:civ_border_color="#FFF"
+                    app:civ_border_width="0dp"
+                    app:civ_shadow="true"
+                    app:civ_shadow_color="#8BC34A"
+                    app:civ_shadow_radius="0" />
+
+                <ImageView
+                    android:id="@+id/imgText"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_toEndOf="@+id/imgLayout"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:paddingTop="16dp"
+                android:text="Moksha Soft Solutions Pvt. Ltd."
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_toEndOf="@+id/imgLayout"
+                android:paddingEnd="0dp"
+                android:paddingStart="5dp"
+                android:text="mokshasoftsolutions@gmail.com"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+
+        <ExpandableListView
+            android:id="@+id/listMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/navigationHeader"
+            android:background="@color/expandable_color"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:groupIndicator="@null" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

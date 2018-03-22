@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/empId"
+                android:layout_width="match_parent"
+                android:paddingBottom="10dp"
+                android:textColor="@color/colorAccent"
+                android:layout_height="match_parent"
+                android:text="Name"
+                android:gravity="center"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/empIdTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:text="Employee ID:"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/empName"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent"
+                android:text="ID"
+                android:padding="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/genderTitle"
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_weight="0.4"
+                android:layout_height="match_parent"
+                android:text="Gender:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:text="Gender"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/empTypeTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:text="Type:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/empType"
+                android:layout_width="0dp"
+                android:padding="5dp"
+                android:layout_weight="0.6"
+                android:layout_height="match_parent"
+                android:text="Subject"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/attStatusTitle"
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:padding="5dp"
+                android:layout_height="match_parent"
+                android:text="Status:"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:padding="5dp"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/attStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Marks"
+                android:background="@color/colorPrimary"
+                android:textColor="#FFf"
+                android:padding="5dp"
+                android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

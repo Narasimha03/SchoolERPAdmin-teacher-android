@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@android:color/darker_gray"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:clipToPadding="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:contentPadding="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/mainLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/classLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleClass"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:text="Class"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/classSpinner"
+                                android:backgroundTint="@android:color/black"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/sectionLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleSection"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:text="Section"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/sectionSpinner"
+                                android:layout_width="match_parent"
+                                android:backgroundTint="@android:color/black"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="16dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/titleSubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/mainLayout"
+                        android:padding="16dp"
+                        android:gravity="center"
+                        android:text="Subject"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/subjectSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleSubject"
+                        android:layout_marginBottom="16dp"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:backgroundTint="@android:color/black"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginStart="16dp" />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardView"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:contentPadding="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/addSubjectText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="16dp"
+                        android:textSize="18sp"
+                        android:text="Add Chapter"
+                        android:textColor="@color/colorAccent" />
+
+                    <LinearLayout
+                        android:id="@+id/subLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/addSubjectText"
+                        android:layout_marginTop="5dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Chapter Name"
+                                android:padding="16sp"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorPrimary" />
+
+                            <EditText
+                                android:id="@+id/editChapterName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext"
+                                android:hint="Chapter Name"
+                                android:paddingLeft="16dp"
+                                android:inputType="text"
+                                android:textSize="15sp"
+                                android:paddingStart="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Chapter Code"
+                                android:padding="16sp"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <EditText
+                                android:id="@+id/editChapterCode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext"
+                                android:hint="Chapter Code"
+                                android:paddingLeft="16dp"
+                                android:inputType="text"
+                                android:layout_marginRight="5dp"
+                                android:textSize="15sp"
+                                android:paddingStart="16dp"
+                                android:layout_marginEnd="5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/topicLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/subLayout"
+                        android:layout_marginTop="5dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="No Topics"
+                                android:padding="16sp"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <EditText
+                                android:id="@+id/editNoTopics"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext"
+                                android:hint="No Topics"
+                                android:paddingLeft="16dp"
+                                android:inputType="text"
+                                android:textSize="15sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="5dp"
+                            android:paddingStart="5dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:text="Description"
+                                android:padding="16sp"
+                                android:textSize="15sp"
+                                android:textColor="@color/colorPrimaryDark" />
+
+                            <EditText
+                                android:id="@+id/editDescription"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/edittext"
+                                android:hint="Description"
+                                android:paddingLeft="16dp"
+                                android:layout_marginRight="5dp"
+                                android:inputType="text"
+                                android:textSize="15sp"
+                                android:layout_marginEnd="5dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/addChapter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/topicLayout"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_shape"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:text="Add Chapter"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:layout_marginRight="10dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>

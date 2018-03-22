@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+<!--
+    <TextView
+        android:id="@+id/titleSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingEnd="6dp"
+        android:paddingStart="6dp"
+        android:paddingTop="10dp"
+        android:text="Search by Keyword"
+        android:textColor="@color/text_color"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/searchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleSearch"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/editSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_weight="1.8"
+            android:background="@drawable/edittext_border"
+            android:hint="Search by Name, Roll No, Enroll No, etc...."
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.2"
+            android:src="@drawable/search_white" />
+
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+       >
+
+        <LinearLayout
+            android:id="@+id/classLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="3dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="3dp"
+                android:text="Employee Type"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/classSpinner"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/black" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/sectionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingEnd="6dp"
+                android:paddingStart="6dp"
+                android:paddingTop="10dp"
+                android:text="Gender"
+                android:textColor="@color/text_color"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/sectionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="@android:color/black" />
+&lt;!&ndash;
+            <android.support.design.widget.FloatingActionButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="50dp"
+                android:id="@+id/search"
+                android:layout_gravity="center"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_search"
+                android:layout_height="50dp"
+                  android:layout_marginLeft="60dp"
+                app:backgroundTint="@color/colorPrimary"
+                tools:ignore="VectorDrawableCompat"
+                android:focusable="true" />&ndash;&gt;
+
+
+        </LinearLayout>-->
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.4">
+
+            <!--<ImageButton
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/search_button"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:id="@+id/select"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_search" />-->
+
+            <android.support.design.widget.FloatingActionButton
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="50dp"
+                android:id="@+id/search"
+                android:layout_gravity="center"
+                android:clickable="true"
+                app:srcCompat="@drawable/ic_search"
+                android:layout_height="50dp"
+                app:backgroundTint="@color/colorPrimary"
+                tools:ignore="VectorDrawableCompat"
+                android:focusable="true" />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+ <!--   <android.support.design.widget.FloatingActionButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/mainLayout"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_shape"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/search_white"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:drawableLeft="@drawable/search_white" />-->
+
+</RelativeLayout>

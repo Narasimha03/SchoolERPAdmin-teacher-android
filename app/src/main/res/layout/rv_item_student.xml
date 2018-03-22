@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Name"
+                    android:padding="3dp"
+                    android:gravity="left"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rollNoText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Roll No:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/rollNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Roll No"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/addNoText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Admission No:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/addNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Admission No"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <!--  <RadioGroup
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/text"
+              android:id="@+id/myRadioGroup"
+              android:checkedButton="@+id/shape"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentEnd="true"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true">
+
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/circle"
+                  android:text="Present" />
+
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/sqare"
+                  android:text="Absent" />
+
+              <RadioButton
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/rectangle"
+                  android:text="On Leave" />
+
+          </RadioGroup>-->
+
+
+        <!--  <CheckBox
+              android:id="@+id/chkSelectedStudent"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_centerVertical="true"
+              android:visibility="gone"
+              />-->
+
+
+        <!-- <CheckBox
+             android:id="@+id/chkSelectedStatus"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:text="Present"
+             android:layout_centerVertical="true"
+             />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameLayout"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/presentAll"
+                        style="@style/CustomCheckBox"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a76406" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#4CAF50"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="7dp"
+                        android:text="P"
+                        android:textAllCaps="true"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="3dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/absentAll"
+                        style="@style/CustomCheckBox"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#d60318" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D32F2F"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="7dp"
+                        android:text="A"
+                        android:textAllCaps="true"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/leaveAll"
+                        style="@style/CustomCheckBox"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a76406" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF5722"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="7dp"
+                        android:text="L"
+                        android:textAllCaps="true"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--<Button
+                android:id="@+id/buttonLeave"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="#fc7608"
+                android:text="Lffff"
+                android:textColor="#161616"
+                android:textSize="16sp" />
+    -->
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:weightSum="3">
+
+                 <TextView
+                     android:id="@+id/att"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1.5"
+                     android:text="Attendance:"
+                     android:textColor="#de2121"
+                     android:textSize="16sp"
+                     android:textStyle="bold" />
+
+                 <Button
+                     android:id="@+id/buttonAttend"
+                     android:layout_width="0dp"
+                     android:layout_height="50dp"
+                     android:layout_weight="0.5"
+                     android:backgroundTint="#ea290b"
+                     android:text="A"
+                     android:textColor="#080808"
+                     android:textSize="16sp" />
+
+                 <Button
+                     android:id="@+id/buttonLeave"
+                     android:layout_width="0dp"
+                     android:layout_height="50dp"
+                     android:layout_weight="0.5"
+                     android:backgroundTint="#fc7608"
+                     android:text="L"
+                     android:textColor="#161616"
+                     android:textSize="16sp" />
+
+                 <Button
+                     android:id="@+id/buttonPresent"
+                     android:layout_width="0dp"
+                     android:layout_height="50dp"
+                     android:layout_weight="0.5"
+                     android:backgroundTint="#09ed09"
+                     android:text="P"
+                     android:textColor="#060606"
+                     android:textSize="16sp" />
+
+             </LinearLayout>-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.medianet.proschool.checkattendance.SubmitAttendanceStudentActivity">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="0dp"
+        card_view:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tv"
+                android:height="40dp"
+                android:background="@drawable/cardview"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Awesome design"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/presentAll"
+                    android:text="Present"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/absentAll"
+                    android:text="Absent"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/leaveAll"
+                    android:text="On Leave"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/studentId"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="20sp"
+                    android:layout_marginTop="5dp"
+                    android:text="animal"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>-->

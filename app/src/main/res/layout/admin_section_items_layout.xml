@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/admin_section"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="Section I"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_one"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Telugu" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_two"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Physics" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_three"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Social" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_four"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Lunch" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_five"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Maths" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_six"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Chemistry" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+            <TextView
+                android:id="@+id/admin_sub_seven"
+                style="@style/AdminTTtext"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="English" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="6dp">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/empIdText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:text="Employee Id:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/empId"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="2dip"
+                android:paddingTop="6dip"
+                android:text="Employee Id:"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/nameText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name:"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Name:"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+
+
+            <CheckBox
+                android:id="@+id/buttonPresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Present"
+                style="@style/CustomCheckBox"
+
+                android:layout_centerVertical="true"
+                />
+
+            <CheckBox
+                android:id="@+id/buttonAbsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Absent"
+                style="@style/CustomCheckBox"
+                android:textColor="#d60318"
+
+
+                android:layout_centerVertical="true"
+                />
+            <CheckBox
+                android:id="@+id/buttonOnLeave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="On Leave"
+                android:textColor="#a76406"
+                style="@style/CustomCheckBox"
+
+
+                android:layout_centerVertical="true"
+                />
+
+            &lt;!&ndash;   <TextView
+                   android:id="@+id/att"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1.5"
+                   android:text="Attendance:"
+                   android:textColor="#de2121"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+               <Button
+                   android:id="@+id/buttonAttend"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_weight="0.5"
+                   android:backgroundTint="#ea290b"
+                   android:text="A"
+                   android:textColor="#080808"
+                   android:textSize="16sp" />
+
+               <Button
+                   android:id="@+id/buttonLeave"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_weight="0.5"
+                   android:backgroundTint="#fc7608"
+                   android:text="L"
+                   android:textColor="#161616"
+                   android:textSize="16sp" />
+
+               <Button
+                   android:id="@+id/buttonPresent"
+                   android:layout_width="0dp"
+                   android:layout_height="50dp"
+                   android:layout_weight="0.5"
+                   android:backgroundTint="#09ed09"
+                   android:text="P"
+                   android:textColor="#060606"
+                   android:textSize="16sp" />&ndash;&gt;
+
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/nameLayout"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameTwo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorAccent"
+                    android:text="Name"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameText"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Type:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/empType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Name"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/empIdTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Employee ID:"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/empId"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="3dp"
+                    android:text="Employee ID:"
+
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameLayout"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <!--<LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_margin="3dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chkdemo"
+                        style="@style/CustomCheckBox"
+                        android:padding="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a76406" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#9C27B0"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:text="D"
+
+                        android:textAllCaps="true"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/presentAll"
+                        style="@style/CustomCheckBox"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a76406" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#4CAF50"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="7dp"
+                        android:text="P"
+                        android:textAllCaps="true"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/absentAll"
+                        style="@style/CustomCheckBox"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#d60318" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#D32F2F"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="7dp"
+                        android:text="A"
+                        android:textAllCaps="true"
+                        android:textColor="#fff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/leaveAll"
+                        style="@style/CustomCheckBox"
+                        android:padding="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#a76406" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#FF5722"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="7dp"
+                        android:text="L"
+                        android:textAllCaps="true"
+                        android:textColor="#fff" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

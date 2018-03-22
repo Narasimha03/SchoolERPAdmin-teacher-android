@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:hint="Name"
+            android:inputType="text"
+            android:paddingTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutFrom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/editCode"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:hint="Percent From(%)"
+            android:inputType="text"
+            android:paddingTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/editGeolocation"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:hint="Percent To(%)"
+            android:inputType="text"
+            android:paddingTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:hint="Description"
+            android:inputType="text"
+            android:paddingTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

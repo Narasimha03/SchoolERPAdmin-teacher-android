@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/photoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:id="@+id/imagePhoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/camera" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="6dp"
+            android:text="Take a Photo"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/galleryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageGallery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/gallery" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="6dp"
+            android:text="Choose from Gallery"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fileLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imageFile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/file" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"
+            android:paddingTop="6dp"
+            android:text="Open Files"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

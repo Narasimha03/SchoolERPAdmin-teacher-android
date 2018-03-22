@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    card_view:cardCornerRadius="5dp"
+    card_view:contentPadding="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <RelativeLayout
+            android:id="@+id/imgLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/imgUser"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/jani"
+                android:visibility="gone"
+                app:civ_border_color="#FFF"
+                app:civ_border_width="0dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#8BC34A"
+                app:civ_shadow_radius="0" />
+
+            <ImageView
+                android:id="@+id/imgText"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/studentDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/imgLayout"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/details_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/stdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Baahubali"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/classStd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Class 6(Section C)"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12-07-92"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/details_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ldn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Local identification Number"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/guardianName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardian Name"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/guardianNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Guardian Number"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/currentAdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Address"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

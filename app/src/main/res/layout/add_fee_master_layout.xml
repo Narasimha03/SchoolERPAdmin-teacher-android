@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Add Fees Master For 2017-18"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/feeCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:text="Fee Category"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/feeCategorySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/feeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="Fee Type"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/feeTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/feeClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:text="Class"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp" />
+
+    <Spinner
+        android:id="@+id/feeClassSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Amount"
+            android:inputType="text"
+            android:paddingTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:textColorHint="@color/colorPrimaryDark"
+        app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+        <EditText
+            android:id="@+id/editDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Description"
+            android:inputType="text"
+            android:paddingTop="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

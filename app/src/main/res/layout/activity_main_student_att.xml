@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.medianet.proschool.checkattendance.SubmitAttendanceStudentActivity">
+
+
+    <LinearLayout
+        android:id="@+id/mainLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/classLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Class"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/classSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="@android:color/black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/sectionLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Section"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+            <Spinner
+                android:id="@+id/sectionSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="@android:color/black" />
+
+        </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:layout_height="wrap_content">
+
+           <Button
+               android:layout_width="match_parent"
+               android:id="@+id/btnSelect"
+                   android:text="Select"
+               android:layout_height="match_parent" />
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cardview"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:id="@+id/select"
+            android:text="PresentAll"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cardview"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:id="@+id/absentAll"
+            android:text="absentAll"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/cardview"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:id="@+id/leaveAll"
+            android:text="leaveAll"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cardview"
+            android:textColor="#fff"
+            android:layout_weight="1"
+            android:id="@+id/deselect"
+            android:text="Deselct all"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/cardview"
+            android:textColor="#fff"
+            android:id="@+id/next"
+            android:visibility="visible"
+            android:text="Next activity"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

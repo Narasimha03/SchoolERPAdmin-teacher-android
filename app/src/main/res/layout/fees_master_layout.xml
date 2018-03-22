@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.25"
+        android:text="Class Name"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/feeType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.25"
+        android:text="Hostel"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="INR 3000"
+        android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/edit"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.25"
+        android:padding="3dp"
+        android:src="@drawable/edit" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.25"
+        android:padding="3dp"
+        android:src="@drawable/cancel" />
+
+</LinearLayout>

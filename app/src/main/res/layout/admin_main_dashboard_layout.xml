@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="40dp"
+    android:background="#E0E0E0"
+    tools:context="com.example.medianet.proschool.suresh.QuickDashboardClass">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/quote_word"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/quote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="0.35"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#009688"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.9"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="Quote for the Day"
+                            android:textColor="#fff"
+                            android:textSize="17sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_weight="0.1"
+                            android:src="@drawable/pencil_edit"
+                            android:textColor="#fff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textQuote"
+                            style="@style/TextColorWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="fill"
+                            android:layout_weight="1"
+                            android:background="#26A69A"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:textSize="15sp"
+                            android:textStyle="italic" />
+
+                       <!-- <TextView
+                            android:id="@+id/quoteAuthor"
+                            style="@style/TextColorWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.4"
+                            android:background="#26A69A"
+                            android:fontFamily="serif"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Albert"
+                            android:textSize="18sp"
+                            android:textStyle="italic" />-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/word_day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:elevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#E64A19"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="0.8"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="A Word, A Day"
+                            android:textColor="#fff"
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/pencil_edit"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#F4511E"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                style="@style/TextColorWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.3"
+                                android:id="@+id/textWord"
+                                android:padding="8dp"
+                                android:textSize="17sp"
+                                android:textStyle="bold|italic" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:id="@+id/imgSound"
+                                android:adjustViewBounds="true"
+                                android:cropToPadding="true"
+                                android:padding="5dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/ic_volume_up_black_24dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:scrollbars="vertical">
+
+                            <android.support.v4.widget.NestedScrollView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    style="@style/TextColorWhite"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:padding="10dp"
+                                    android:id="@+id/wordMeaning"
+                                    android:textSize="15sp" />
+                            </android.support.v4.widget.NestedScrollView>
+                        </LinearLayout>
+
+                        <!--<TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:padding="6dp"
+                            android:text="More"
+                            android:textColor="#fff"
+                            android:textSize="13sp"
+                            android:textStyle="italic" />-->
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/curriculum_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quote_word"
+            android:layout_marginTop="4dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/curriculum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#6D4C41"
+                        android:gravity="center"
+
+                        android:padding="5dp"
+                        android:text="Curriculum for the Day"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <include
+                        layout="@layout/activity_time_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/curriculum" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_student_attendance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/curriculum_layout"
+            android:layout_marginTop="4dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/student_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#607D8B"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Student Attendance Report"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <include
+                        layout="@layout/admin_student_attendance_main_layout_sections_data"
+                        android:layout_width="match_parent"
+                        android:layout_below="@id/student_attendance"
+                        android:layout_height="wrap_content"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_teacher_attendance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/admin_student_attendance_layout"
+            android:layout_marginTop="4dp"
+
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/teacher_attendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#616161"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Staff Attendance Report"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <include
+                        layout="@layout/admin_teacher_attendance_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/teacher_attendance"
+                        android:background="#E0E0E0" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/admin_events_notice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/admin_teacher_attendance_layout"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/admin_events"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#00796B"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Events"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <include
+                        layout="@layout/admin_dashboard_events_recycler_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/admin_events" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/admin_notice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#0097A7"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Notice Board"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+
+                    <include
+                        layout="@layout/admin_dashboard_noticeboard_recycler_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/admin_notice" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

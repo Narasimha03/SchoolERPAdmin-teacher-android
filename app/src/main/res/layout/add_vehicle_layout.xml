@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_marginBottom="40dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include layout="@layout/content_main_vehicle" />
+
+
+        <View
+            android:id="@+id/fabBGLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransBg"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/fabLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginBottom="10dp"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/standard_12"
+            android:visibility="gone"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="7dp">
+            <!--    if you are not using Snackbar with this activity then remove below line from every place of the file:
+
+                app:layout_behavior="com.ajaysinghdewari.floatingactionbuttonmenu.activities.utils.MoveUpwardBehavior"
+
+                the above line enables the view to Scrolls up with the snackbar as, the FAB do automaticaly scrolls up
+                when the snackbar appear, so if snackbar is not used please remove the above line from every view present in the xml-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_fab_text"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Add Vehicle"
+                android:textColor="#313131"
+                android:textSize="16dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/add_vehicle"
+                app:backgroundTint="@color/colorFAB1"
+                app:fabSize="mini"
+                android:layout_marginStart="10dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:clipToPadding="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/standard_12">
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+
+                android:gravity="center_vertical"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_add_black_24dp"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+
+        <!--  <android.support.design.widget.FloatingActionButton
+              android:id="@+id/fab"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="bottom|end"
+              android:layout_margin="@dimen/fab_margin"
+              app:backgroundTint="@color/colorPrimary"
+              app:srcCompat="@drawable/add" />-->
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vehicleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingEnd="0dp"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="Vehicle List"
+                android:textColor="@color/colorAccent" />
+
+            <include layout="@layout/content_main_vehicle" />
+
+          &lt;!&ndash;  <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vehicleText"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp" />&ndash;&gt;
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/recycler_view"
+                app:backgroundTint="@color/colorPrimary"
+                app:srcCompat="@drawable/add"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margin" />
+
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>-->

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/classLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleClass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Class"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/classSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sectionLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="16dp"
+                            android:text="Section"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/sectionSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginStart="16dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/mainLayout"
+                    android:background="@drawable/button_shape"
+                    android:drawablePadding="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Select"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardView"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="6dp">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?android:attr/dividerHorizontal"
+                android:showDividers="middle"
+                android:shrinkColumns="*"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/noText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="No Records Found"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

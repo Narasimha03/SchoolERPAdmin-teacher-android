@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="6dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/titleSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="10dp"
+                    android:text="Search by Keyword"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/searchLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleSearch"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/editSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="6dp"
+                        android:layout_marginStart="6dp"
+                        android:layout_weight="1.8"
+                        android:background="@drawable/edittext_border"
+                        android:hint="Search by Name, Roll No, Enroll No, etc...."
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/imgSearch"
+                        android:layout_width="0dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="0.2"
+                        android:src="@drawable/search_white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchLayout"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/classLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleClass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="6dp"
+                            android:paddingStart="6dp"
+                            android:paddingTop="10dp"
+                            android:text="Class"
+                            android:textColor="@color/text_color"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/typeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="6dp"
+                            android:backgroundTint="@android:color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/genderSpinner"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleSection"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingEnd="6dp"
+                            android:paddingStart="6dp"
+                            android:paddingTop="10dp"
+                            android:text="Section"
+                            android:textColor="@color/text_color"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/sectionSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="6dp"
+                            android:backgroundTint="@android:color/black" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/titleYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mainLayout"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="6dp"
+                    android:paddingStart="6dp"
+                    android:paddingTop="10dp"
+                    android:text="Batch Year"
+                    android:textColor="@color/text_color"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/yearSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/titleYear"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginStart="6dp"
+                    android:backgroundTint="@android:color/black" />
+
+                <Button
+                    android:id="@+id/search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/yearSpinner"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/button_shape"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/search_white"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:text="Search"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardCornerRadius="5dp"
+            card_view:contentPadding="6dp">
+
+            <include layout="@layout/content_main_all_students" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/std_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/stdTitleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/textStdCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="10dp"
+                android:text="Students"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgLines"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:src="@drawable/lines_white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />-->
+    <FrameLayout
+        android:id="@+id/fabBGLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransBg"
+        android:visibility="gone" />
+
+
+    <!--
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="160dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:visibility="invisible"
+            app:backgroundTint="@color/colorFAB2"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/ic_done" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="90dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:visibility="invisible"
+            app:elevation="6dp"
+            app:backgroundTint="@color/colorFAB1"
+            app:pressedTranslationZ="12dp"
+            android:src="@drawable/ic_message" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            app:elevation="6dp"
+            app:backgroundTint="@color/colorAccent"
+            app:pressedTranslationZ="12dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/add" />-->
+
+    <LinearLayout
+        android:id="@+id/fabLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/standard_23"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="7dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/standard_12"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="Admission"
+            android:background="@drawable/gradient_fab_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#313131"
+
+            android:textSize="16dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_done"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorFAB2"
+            app:fabSize="mini" />
+        <!--     &lt;!&ndash;
+                     app:srcCompat="@drawable/ic_message"
+             &ndash;&gt;-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/standard_23"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="7dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/standard_12"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save as Excel"
+            android:background="@drawable/gradient_fab_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#313131"
+            android:textSize="16dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_message"
+            app:backgroundTint="@color/colorFAB1"
+            app:fabSize="mini" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fabLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/standard_23"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="7dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/standard_12"
+        android:visibility="gone">
+        <!--  &lt;!&ndash;
+                  app:layout_behavior="com.example.medianet.proschool.suresh.favactivity.MoveUpwardBehavior"
+          &ndash;&gt;-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save as Pdf"
+            android:background="@drawable/gradient_fab_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#313131"
+
+            android:textSize="16dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            app:fabSize="mini"
+            app:srcCompat="@drawable/ic_camera" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fabLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/standard_23"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="7dp"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/standard_12"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:text="Admission"
+            android:background="@drawable/gradient_fab_text"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="#313131"
+
+            android:textSize="16dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_done"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/colorFAB2"
+            app:fabSize="mini" />
+        <!--   &lt;!&ndash;
+                   app:srcCompat="@drawable/ic_message"
+           &ndash;&gt;-->
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:clipToPadding="false"
+        android:gravity="center_vertical"
+        android:padding="@dimen/standard_12">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+
+            android:gravity="center_vertical"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/add" />
+    </LinearLayout>
+
+    <!--  <android.support.design.widget.FloatingActionButton
+          android:id="@+id/fab"
+          android:layout_width="60dp"
+          android:layout_height="wrap_content"
+          android:layout_gravity="bottom|end"
+          android:layout_margin="@dimen/fab_margin"
+          app:backgroundTint="@color/colorPrimary"
+          app:srcCompat="@drawable/add" />-->
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:gravity="bottom"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:umanoShadowHeight="4dp"
+        tools:umanoPanelHeight="0dp"
+        tools:umanoParallaxOffset="@dimen/nav_header_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                card_view:cardCornerRadius="5dp"
+                card_view:contentPadding="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/titleSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="6dp"
+                        android:paddingStart="6dp"
+                        android:paddingTop="10dp"
+                        android:text="Search by Keyboard"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/searchLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/titleSearch"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:id="@+id/editSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginEnd="6dp"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="1.8"
+                            android:background="@drawable/edittext_border"
+                            android:hint="Search by Name, Roll No, Enroll No, etc...."
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/imgSearch"
+                            android:layout_width="0dp"
+                            android:layout_height="20dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight="0.2"
+                            android:src="@drawable/search" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/empTypeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/searchLayout"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:id="@+id/typeLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleType"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:text="Employee Type"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/typeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="16dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/genderLayout"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/titleGender"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="16dp"
+                                android:text="Gender"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
+
+                            <Spinner
+                                android:id="@+id/genderSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:layout_marginStart="16dp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_below="@+id/empTypeLayout"
+                        android:background="@drawable/button_shape"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/search_white"
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        android:text="Search"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/buttonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/search"
+                        android:orientation="horizontal"
+                        android:paddingBottom="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingTop="10dp"
+                        android:weightSum="3">
+
+                        <Button
+                            android:id="@+id/submit"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.25"
+                            android:background="@drawable/button_shape"
+                            android:paddingEnd="5dp"
+                            android:paddingStart="5dp"
+                            android:text="Submit Attendance"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/holiday"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.25"
+                            android:background="@drawable/button_shape"
+                            android:paddingEnd="10dp"
+                            android:paddingStart="10dp"
+                            android:text="Mark as holiday"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white" />
+
+                        <ToggleButton
+                            android:id="@+id/toggleButton"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="6dp"
+                            android:layout_weight="0.5"
+                            android:text="ToggleButton"
+                            android:textColor="#000000" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/empTitleLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textEmpCount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.75"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="10dp"
+                    android:text="Employees"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgLines"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="0.25"
+                    android:src="@drawable/lines_white" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>-->

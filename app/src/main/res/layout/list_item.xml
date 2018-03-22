@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingBottom="18dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="16dp"
+        android:paddingTop="18dp"
+        android:text="Sub Item"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/itemName"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

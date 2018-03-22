@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="5dp"
+    android:scrollbarStyle="outsideOverlay"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editRoom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Room No / Name"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/titleHostel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Hostel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/hostelSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/titleRoomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Room Type"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15sp" />
+
+        <Spinner
+            android:id="@+id/roomTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutNoBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editNoBed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="No of Bed"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutCostBed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editCostBed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Cost Per Bed"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/TextAppearance.App.TextInputLayout">
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="Description"
+                android:inputType="text"
+                android:paddingTop="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</ScrollView>

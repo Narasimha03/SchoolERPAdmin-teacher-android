@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/classes_layout_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e7e7e7"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/admin_student_attendance_class_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admin_student_attendance_graph_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/classes_layout_attendance"
+        android:orientation="vertical">
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/admin_student_attendance_bar_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
